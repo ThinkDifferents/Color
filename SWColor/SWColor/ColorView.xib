@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ColorView">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="641"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7a-j4-rat">
+                    <rect key="frame" x="50" y="135" width="200" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# 000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i2-cz-3ls">
+                            <rect key="frame" x="29" y="26" width="64" height="19"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R 0 G 0 B 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUT-sz-Ivz">
+                            <rect key="frame" x="29" y="60.5" width="84" height="19"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8i2-cz-3ls" firstAttribute="leading" secondItem="s7a-j4-rat" secondAttribute="leading" constant="29" id="ELp-Aq-3JH"/>
+                        <constraint firstAttribute="width" constant="200" id="ZQd-Cv-S2Z"/>
+                        <constraint firstItem="CUT-sz-Ivz" firstAttribute="leading" secondItem="s7a-j4-rat" secondAttribute="leading" constant="29" id="ZoR-Lb-Jge"/>
+                        <constraint firstItem="8i2-cz-3ls" firstAttribute="top" secondItem="s7a-j4-rat" secondAttribute="top" constant="26" id="hfJ-R9-Px4"/>
+                        <constraint firstItem="CUT-sz-Ivz" firstAttribute="top" secondItem="8i2-cz-3ls" secondAttribute="bottom" constant="15.5" id="lDi-qQ-QST"/>
+                        <constraint firstAttribute="height" constant="100" id="v2V-dJ-9M1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s7a-j4-rat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="1R9-7V-vGa"/>
+                <constraint firstItem="s7a-j4-rat" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="115" id="pRu-wn-NiB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="CopyView" destination="s7a-j4-rat" id="5tF-N9-JXo"/>
+                <outlet property="hexColor" destination="8i2-cz-3ls" id="agx-OW-1QC"/>
+                <outlet property="rgbColor" destination="CUT-sz-Ivz" id="ukb-zN-0Ga"/>
+            </connections>
+            <point key="canvasLocation" x="-118.40000000000001" y="160.56971514242881"/>
+        </view>
+    </objects>
+</document>
